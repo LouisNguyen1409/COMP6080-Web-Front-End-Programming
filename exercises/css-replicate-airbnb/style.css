@@ -1,0 +1,90 @@
+body {
+    color: rgb(72, 72, 72);
+    font-family: Circular, Arial, Helvetica, sans-serif;
+    padding: 8px;
+    width: 900px;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 16px 0px;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    /* Overwrite defalt properties */
+    text-decoration: none;
+    box-shadow: none;
+    font: inherit;
+
+    /* New style */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 22px;
+    border-radius: 4px;
+    border: 2px solid rgb(0, 132, 137);
+    background: transparent;
+}
+
+#btn1 {
+    background-color: #018489;
+    color: #fff;
+    border-color: #018489;
+}
+
+#btn2 {
+    background-color: #fff;
+    color: #018489;
+    border-color: #018489;
+}
+
+hr {
+    border: 0.5px solid rgb(235, 235, 235);
+}
+
+.button {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    font-size: 0px;
+}
+
+@font-face {
+    font-family: Circular;
+    src: url("./solution/@font-face/860c3ec7bbc5da3e97233ccecafe512e.woff");
+}
+
+h2 {
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+#right-article {
+    float: left;
+    width: calc(100% / 3);
+}
+
+#left-article {
+    float: left;
+    width: calc(100% / 3);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 14px 32px 8px 0;
+}
+
+li {
+    line-height: 1.375em;
+    padding: 8px 0;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}

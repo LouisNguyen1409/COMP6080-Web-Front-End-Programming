@@ -1,0 +1,62 @@
+body {
+    font-family: Georgia, serif;
+    padding: 0 10%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: lighter;
+    color: #444444;
+    margin-bottom: 0;
+}
+
+p {
+    text-align: center;
+    color: #888888;
+    font-size: 1em;
+    line-height: 2.25em;
+}
+
+.location {
+    font-size: 1.25em;
+    color: #AAAAAA;
+    margin: 0.33em 0;
+    line-height: normal;
+}
+
+.description {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.social-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #DDDDDD solid 1px;
+    margin: 0 44%;
+}
+
+.social-icon {
+    padding: 0 0.5em;
+}
+
+.outer-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inner-box {
+    padding: 0 4px;
+    flex: 1;
+}
+
+.img-box {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
