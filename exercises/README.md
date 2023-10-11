@@ -4,24 +4,24 @@ Please see https://cs6080.web.cse.unsw.edu.au/ for more information
 
 ## checklist
 
-- [ ] a11y-find-poor-accessibility
-- [ ] a11y-lighthouse-analysis
-- [ ] a11y-making-page-better-1
-- [ ] a11y-making-page-better-2
-- [ ] a11y-making-page-better-3
-- [ ] ajax-fetch-to-ajax
-- [ ] async-error-handling
-- [ ] async-nested-promises
-- [ ] async-promises-all
-- [ ] async-promises-timeouts
-- [ ] browser-fetch-local-storage
-- [ ] browser-review-too-manual
-- [ ] css-dev-tools-manipulate
+- [x] a11y-find-poor-accessibility
+- [x] a11y-lighthouse-analysis
+- [x] a11y-making-page-better-1
+- [x] a11y-making-page-better-2
+- [x] a11y-making-page-better-3
+- [x] ajax-fetch-to-ajax
+- [x] async-error-handling
+- [x] async-nested-promises
+- [x] async-promises-all
+- [x] async-promises-timeouts
+- [x] browser-fetch-local-storage
+- [x] browser-review-too-manual
+- [x] css-dev-tools-manipulate
 - [x] css-generate-simple-box
 - [x] css-image-backgrounds
 - [x] css-image-layout-complex
-- [ ] css-investigate-page-components
-- [ ] css-mobile-first-page
+- [x] css-investigate-page-components
+- [x] css-mobile-first-page
 - [x] css-replicate-airbnb
 - [x] css-replicate-cities-layout
 - [x] css-replicate-layered-and-mobile
@@ -31,28 +31,28 @@ Please see https://cs6080.web.cse.unsw.edu.au/ for more information
 - [x] css-replicate-split-text-page
 - [ ] css-replicate-stats-marketing
 - [ ] css-replicate-website-hero
-- [ ] css-responsive-site-analyse
+- [x] css-responsive-site-analyse
 - [ ] html-generate-svgs
 - [ ] html-many-tags-1
 - [x] html-review-buckland
 - [x] icebreaker
-- [ ] javascript-arch-browser-node-quiz
+- [x] javascript-arch-browser-node-quiz
 - [ ] js-ajax-azure-api
-- [ ] js-ajax-recursive-fetch
-- [ ] js-async-promise-to-await
-- [ ] js-browser-2048
-- [ ] js-browser-build-dom-completely
-- [ ] js-browser-build-dom-completely-loop
-- [ ] js-browser-building-art
-- [ ] js-browser-counter-form
-- [ ] js-browser-form-collect-validate
-- [ ] js-browser-screen-state
-- [ ] js-browser-url-props-and-date
-- [ ] node-momentjs-problem
-- [ ] node-number-manipulation-1
-- [ ] node-number-manipulation-2
-- [ ] node-number-manipulation-3
-- [ ] node-uuid-problem
+- [x] js-ajax-recursive-fetch
+- [x] js-async-promise-to-await
+- [x] js-browser-2048
+- [x] js-browser-build-dom-completely
+- [x] js-browser-build-dom-completely-loop
+- [x] js-browser-building-art
+- [x] js-browser-counter-form
+- [x] js-browser-form-collect-validate
+- [x] js-browser-screen-state
+- [x] js-browser-url-props-and-date
+- [x] node-momentjs-problem
+- [x] node-number-manipulation-1
+- [x] node-number-manipulation-2
+- [x] node-number-manipulation-3
+- [x] node-uuid-problem
 - [ ] npm-publish-package
 - [ ] product-app-plan
 - [ ] product-usability-testing
@@ -78,5 +78,5 @@ Please see https://cs6080.web.cse.unsw.edu.au/ for more information
 - [ ] testing-ui-1
 - [ ] testing-ui-2
 - [ ] testing-ui-3
-- [ ] ui-critique-websites-1
-- [ ] ui-critique-websites-2
+- [x] ui-critique-websites-1
+- [x] ui-critique-websites-2

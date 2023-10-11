@@ -1,16 +1,69 @@
 // TODO
 function question1() {
-  getCompanyRepos("microsoft").then((company) =>
-    company.forEach((repo) => console.log(repo))
-  );
+  const microsoftRepos = getCompanyRepos("microsoft")
+  const googleRepos = getCompanyRepos("google")
+  const canvaRepos = getCompanyRepos("canva")
+  Promise.all([microsoftRepos, googleRepos, canvaRepos]).then((companies) => {
+    companies.forEach((company) => {
+      company.forEach((repo) => console.log(repo));
+    });
+  });
+}
 
-  getCompanyRepos("google").then((company) =>
-    company.forEach((repo) => console.log(repo))
-  );
+async function question2() {
+  const microsoftRepos = getCompanyRepos("microsoft")
+  const googleRepos = getCompanyRepos("google")
+  const canvaRepos = getCompanyRepos("canva")
+  await Promise.all([microsoftRepos, googleRepos, canvaRepos]).then((companies) => {
+    companies.forEach((company) => {
+      company.forEach((repo) => console.log(repo));
+    });
+  });
+}
 
-  getCompanyRepos("canva").then((company) =>
-    company.forEach((repo) => console.log(repo))
-  );
+async function question3() {
+  const microsoftRepos = getCompanyRepos("microsoft");
+  const fakeRepos = getCompanyRepos("some_fake_company");
+
+  try {
+    const companies = await Promise.all([microsoftRepos, fakeRepos]);
+
+    // Will not get to here, so we don't see Microsoft's repo names
+    companies.forEach((company) => {
+      company.forEach((repo) => console.log(repo));
+    });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function question4() {
+  const microsoftRepos = getCompanyRepos("microsoft");
+  const googleRepos = getCompanyRepos("google");
+  const canvaRepos = getCompanyRepos("canva");
+  const fakeRepos = getCompanyRepos("some_fake_company");
+
+  try {
+    // Promise.allSettled will not reject here
+    const companies = await Promise.allSettled([
+      microsoftRepos,
+      googleRepos,
+      canvaRepos,
+      fakeRepos,
+    ]);
+
+    // result will be either { status: "fulfilled", value: ... } or { status: "rejected", reason: ... }
+    companies.forEach((company) => {
+      if (company.status === "fulfilled") {
+        company.value.forEach((repo) => console.log(repo));
+      } else {
+        // Do whatever error handling you want - we just log the reason (as opposed to throwing it)
+        console.log(company.reason);
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 /**
@@ -40,3 +93,8 @@ async function getCompanyRepos(companyName) {
 
   return repoArray;
 }
+
+// question1();
+// question2();
+// question3();
+question4();

@@ -6,11 +6,14 @@ function App() {
 
   const [org, setOrg] = React.useState(0);
 
-  React.useEffect(() => {
-    fetch(`https://api.github.com/orgs/microsoft`)
-    .then(d => d.json())
-    .then(d => setOrg(d.public_repos))
-    .catch(err => console.log(err));
+  React.useEffect(async () => {
+    try {
+      const res = await fetch(`https://api.github.com/orgs/microsoft`)
+      const data = await res.json();
+      setOrg(data.public_repos);
+    } catch (error) {
+      console.log(error);
+    }
   }, []);
 
   return (

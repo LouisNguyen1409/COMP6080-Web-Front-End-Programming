@@ -1,0 +1,16 @@
+{
+  "name": "uuid-problem",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "In this exercise we will set up an NPM package, install some modules, and then write a nodejs file that uses them, before minifying our code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minify": "^10.5.2",
+    "uuid": "^9.0.1"
+  }
+}
